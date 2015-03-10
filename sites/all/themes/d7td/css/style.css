@@ -1,0 +1,49 @@
+html, body {
+  background: #f8f5f1;
+  color: #433a2d;
+}
+
+body {
+  font-family: Heveletica,Arial,sans-serif;
+  background-image: url(../images/bg-texture.png);
+}
+
+a {
+  color: #122b76;
+}
+
+#main {
+  box-shadow: 10px 10px 5px #cccccc;  
+}
+
+#navigation,
+#footer {
+  background: #4b4233;
+  color: #fff;
+  border: 1px solid #292011;
+  border-right: none;
+  border-left: none;
+}
+
+#navigation a,
+#footer a {
+  color: #fff;
+}
+
+#content {
+  background: #f6f7f9;
+}
+
+#main {
+  background: #f6f6f7f9;
+  border: 1px solid #cccccc;
+}
+
+#content .comment .permalink {
+  text-transform: lowercase;
+}
+
+body.front #content .links {
+  font-size: 0.8em;
+}
+}

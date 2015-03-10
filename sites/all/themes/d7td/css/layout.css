@@ -1,12 +1,13 @@
 body {
+  margin: 0;
 }
 
 body.one-sidebar #content {
-  width: 720px;
+  width: 740px;
 }
 
 body.two-sidebars #content {
-  width: 480px;
+  width: 510px;
 }
 
 body.no-sidebars #content {
@@ -24,18 +25,163 @@ body.no-sidebars #content {
 }
 
 #content,
-#sidebar-first {
-  float: left;
-}
-
-#sidebar-first {
-  float: left;
-  width: 240px;
-}
-
+#sidebar-first,
 #sidebar-second {
   float: left;
-  width: 240px;
 }
 
+#sidebar-first,
+#sidebar-second {
+  width: 225px;
+  background-color: #eeeeee;
+}
 
+#navigation h2 {
+  display: none;
+}
+
+h1#page-title {
+  margin: 20px;
+}
+#navigation #secondary-menu {
+  float: right;
+  margin: 10px 0;
+}
+
+#navigation {
+  margin-bottom: 10px;
+}
+
+#footer {
+  margin-top: 20px;
+}
+
+#footer .block-inner {
+  margin: 10px 0;
+}
+
+#main {
+  padding: 10px;
+  background-color: #fff;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+}
+
+#name-and-slogan h1#site-name,
+#name-and-slogan div#site-name {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.block .block-inner {
+  padding: 5px 20px;
+}
+
+#main-menu li.first {
+  padding-left: 0;
+}
+
+#secondary-menu li.last {
+  padding-right: 0;
+}
+
+#breadcrumb {
+  overflow: hidden;
+  font-size: 0.7em;
+}
+
+#breadcrumb .breadcrumb-label {
+  padding-right: 5px;
+  float: left;
+}
+#breadcrumb .breadcrumb {
+  float: left;
+}
+
+#navigation div.section {
+  position: relative;
+  min-height: 50px;
+}
+
+#navigation #main-menu,
+#navigation #secondary-menu {
+  position: absolute;
+}
+
+#navigation #main-menu {
+  left: 0;
+  top: 0;
+}
+
+#navigation #secondary-menu {
+  right: 0;
+  top: 6px;
+}
+
+#content .node .user-picture {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#content .node .user-picture img {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+}
+
+#content .node .submitted {
+  font-size: 0.8em;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+  height: 75px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.messages {
+  margin: 20px;
+}
+
+#content .comment .submitted {
+  font-size: 0.8em;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+  height: 35px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#content .comment {
+  font-size: 0.7em;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#content .comment .user-picture img {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+}
+
+#super-header div.section {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#super-header div.section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -8,5 +8,20 @@ core = 7.x
 
 ; CSS
 stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
 
-; JS
+; Regions. If any regions are added, all wanted regions including the default
+; regions must be defined here in the .info file.
+regions[super_header] = Super Header
+
+regions[header] = Header
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+
+regions[footer] = Footer
+
+

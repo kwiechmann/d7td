@@ -11,4 +11,5 @@ sites/*/private
 .gitignore
 
 
-/nbproject/private/
+nbproject/private/
+nbproject/
