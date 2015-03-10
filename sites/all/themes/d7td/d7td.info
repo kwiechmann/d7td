@@ -4,4 +4,9 @@ version = 7.x-0.1
 core = 7.x
 
 ; Do not include a version number string if sharing the theme
-; When sharing on Drupal.org "version = VERSION" 
+; When sharing on Drupal.org use "version = VERSION" 
+
+; CSS
+stylesheets[all][] = css/layout.css
+
+; JS
