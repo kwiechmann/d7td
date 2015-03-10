@@ -1,5 +1,5 @@
 name = Theme Development Practice Theme
-description = Learning theme created as part of the Drupal Tutor theming course. 
+description = Learning theme created as part of the DrupalTutor theming course. 
 version = 7.x-0.1
 core = 7.x
 
