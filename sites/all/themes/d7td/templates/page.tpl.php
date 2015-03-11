@@ -73,7 +73,16 @@
  */
 ?>
 
-  <div id="page-wrapper"><div id="page">
+  <div id="page-wrapper">
+    <div id="page">
+
+    <?php if ($page['super_header']): ?>
+      <div id="super-header">
+        <div class="section">
+          <?php print render($page['super_header']); ?>
+        </div> <!-- /.section  -->
+      </div> <!-- /#super-header -->
+    <?php endif; ?>
 
     <div id="header"><div class="section clearfix">
 
@@ -108,51 +117,68 @@
     </div></div> <!-- /.section, /#header -->
 
     <?php if ($main_menu || $secondary_menu): ?>
-      <div id="navigation"><div class="section">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-      </div></div> <!-- /.section, /#navigation -->
+      <div id="navigation">
+        <div class="section">
+          <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
+          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
+        </div> <!-- /.section -->
+      </div> <!-- /#navigation -->
     <?php endif; ?>
 
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb"><div class="breadcrumb-label">Path:</div> <?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
-    <?php print $messages; ?>
+    <div id="main-wrapper">
+      <div id="main" class="clearfix">
 
-    <div id="main-wrapper"><div id="main" class="clearfix">
+        <?php if ($page['sidebar_first']): ?>
+          <div id="sidebar-first" class="column sidebar">
+            <div class="section">
+              <?php print render($page['sidebar_first']); ?>
+            </div> <!-- /.section  -->
+          </div> <!-- /#sidebar-first -->
+        <?php endif; ?>
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
+        <div id="content" class="column">
+          <div class="section">
+            <?php print $messages; ?>
+            <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+            <a id="main-content"></a>
+            <?php print render($title_prefix); ?>
+            <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+            <?php print render($page['help']); ?>
+            <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+            <?php print render($page['content']); ?>
+            <?php print $feed_icons; ?>
+          </div> <!-- /.section -->
+        </div> <!-- /#content -->
+
+        <?php if ($page['sidebar_second']): ?>
+          <div id="sidebar-second" class="column sidebar">
+            <div class="section">
+              <?php print render($page['sidebar_second']); ?>
+            </div> <!-- /.section -->
+          </div> <!-- /#sidebar-second -->
+        <?php endif; ?>
+
+      </div></div> <!-- /#main, /#main-wrapper -->
+
+      <?php if ($page['postscript']): ?>
+        <div id="postscript">
+          <div class="section clearfix">
+            <?php print render($page['postscript']); ?>
+          </div> <!-- /.section  -->
+        </div> <!-- /#postscript -->
       <?php endif; ?>
 
-      <div id="content" class="column">
+      <div id="footer">
         <div class="section">
-          <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-          <a id="main-content"></a>
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-          <?php print render($page['help']); ?>
-          <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-          <?php print render($page['content']); ?>
-          <?php print $feed_icons; ?>
+          <?php print render($page['footer']); ?>
         </div> <!-- /.section -->
-      </div> <!-- /#content -->
+      </div> <!-- /#footer -->
 
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
-
-    </div></div> <!-- /#main, /#main-wrapper -->
-
-    <div id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
-
-  </div></div> <!-- /#page, /#page-wrapper -->
+    </div> <!-- /#page -->
+  </div> <!-- /#page-wrapper -->
