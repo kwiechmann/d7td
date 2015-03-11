@@ -24,6 +24,10 @@ body.no-sidebars #content {
   margin-right: auto;
 }
 
+#footer {
+  clear: both;
+}
+
 #content,
 #sidebar-first,
 #sidebar-second {
@@ -34,6 +38,7 @@ body.no-sidebars #content {
 #sidebar-second {
   width: 225px;
   background-color: #eeeeee;
+  font-size: 0.8em;
 }
 
 #navigation h2 {
@@ -50,10 +55,6 @@ h1#page-title {
 
 #navigation {
   margin-bottom: 10px;
-}
-
-#footer {
-  margin-top: 20px;
 }
 
 #footer .block-inner {
@@ -172,7 +173,8 @@ div.messages {
   border-radius: 50%;
 }
 
-#super-header div.section {
+#super-header div.section,
+#postscript div.section {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -184,4 +186,21 @@ div.messages {
 #super-header div.section p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+#postscript div.section p img {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#postscript #block-comment-recent,
+#postscript #block-node-recent {
+  float: left;
+  text-align: left;
+  width: 50%;
+  font-size: 0.8em;
+}
+
+#postscript #block-node-recent table {
+  width: 100%;
 }

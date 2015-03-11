@@ -84,7 +84,6 @@
       </div> <!-- /#super-header -->
     <?php endif; ?>
 
-
     <div id="header"><div class="section clearfix">
 
       <?php if ($logo): ?>
@@ -166,6 +165,14 @@
         <?php endif; ?>
 
       </div></div> <!-- /#main, /#main-wrapper -->
+
+      <?php if ($page['postscript']): ?>
+        <div id="postscript">
+          <div class="section clearfix">
+            <?php print render($page['postscript']); ?>
+          </div> <!-- /.section  -->
+        </div> <!-- /#postscript -->
+      <?php endif; ?>
 
       <div id="footer">
         <div class="section">
