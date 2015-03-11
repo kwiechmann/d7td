@@ -24,6 +24,10 @@ body.no-sidebars #content {
   margin-right: auto;
 }
 
+#main {
+  margin-bottom: 20px;
+}
+
 #footer {
   clear: both;
 }
