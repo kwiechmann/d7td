@@ -3,6 +3,10 @@ html, body {
   color: #433a2d;
 }
 
+body.is-super-admin {
+  border: 4px dashed #ff4040;
+}
+
 body {
   font-family: Heveletica,Arial,sans-serif;
   background-image: url(../images/bg-texture.png);
