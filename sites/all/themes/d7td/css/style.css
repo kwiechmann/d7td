@@ -9,7 +9,7 @@ body.is-super-admin {
 
 body {
   font-family: Heveletica,Arial,sans-serif;
-  background-image: url(../images/bg-texture.png);
+  background-image: url('../images/bg-texture.png');
 }
 
 a {
