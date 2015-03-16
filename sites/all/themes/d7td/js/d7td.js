@@ -1,4 +1,5 @@
-(function($) {
+/*
+ (function($) {
 
   // Activate the wonky april fool's prank.
   // Behavior name (e.g., "d7td_wonky") needs to be unique.
@@ -11,3 +12,4 @@
   }
   
 })(jQuery);
+*/
