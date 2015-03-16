@@ -1,4 +1,22 @@
 <?php
+/**
+ * Preprocess variables for html.tpl.php
+ *
+ * @see system_elements()
+ * @see html.tpl.php
+ */
+function d7td_preprocess_html(&$variables) {
+  global $user;
+  
+  // Add a class that tells us whether the page is viewed by the super-admin
+  // user or not.
+  if ($user->uid == 1) {
+    $variables['classes_array'][] = 'is-super-admin';
+  }
+  else {
+    $variables['classes_array'][] = 'not-super-admin';
+  }
+}
 
 /**
  * Returns HTML for a recent node to be displayed in the recent content block.
