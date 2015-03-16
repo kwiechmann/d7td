@@ -87,6 +87,25 @@ function d7td_process_username(&$variables) {
   } 
 }
 
+/**
+ * Processes variables for node.tpl.php
+ *
+ * Most themes utilize their own copy of node.tpl.php. The default is located
+ * inside "modules/node/node.tpl.php". Look in there for the full list of
+ * variables.
+ *
+ * The $variables array contains the following arguments:
+ * - $node
+ * - $view_mode
+ * - $page
+ *
+ * @see node.tpl.php
+ */
+function d7td_preprocess_node(&$variables) {
+  $node = $variables['node'];
 
-
-
+  // Update post information only on certain node types.
+  if (variable_get('node_submitted_' . $node->type, TRUE)) {
+    $variables['submitted'] = str_replace(t('Submitted by '), t('Posted by '), $variables['submitted']);
+  }
+}
