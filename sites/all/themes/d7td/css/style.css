@@ -35,7 +35,7 @@ a {
 }
 
 #main {
-  background: #f6f6f7f9;
+  background: #f6f6f7;
   border: 1px solid #cccccc;
 }
 
@@ -46,4 +46,14 @@ a {
 body.front #content .links {
   font-size: 0.8em;
 }
+
+.marker {
+  font-weight: bold;
+}
+.marker.marker-new {
+  color: red;
+}
+
+.marker.marker-updated {
+  color: orange;
 }
