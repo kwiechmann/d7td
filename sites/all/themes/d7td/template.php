@@ -10,7 +10,6 @@ function d7td_preprocess_html(&$variables) {
   
   // Add a class that tells us whether the page is viewed by the super-admin
   // user or not.
-  kpr($variables);
   if ($user->uid == 1) {
     $variables['classes_array'][] = 'is-super-admin';
   }
