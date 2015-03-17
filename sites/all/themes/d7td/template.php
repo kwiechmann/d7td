@@ -78,15 +78,12 @@ function d7td_mark($variables) {
 function d7td_preprocess_username(&$variables) {
   $account = $variables['account'];
 
-  if (!empty($account->mail)) {
-    $variables['extra'] .= ' <span clsss="user-email">(' . $account->mail . ')</span>';
-  }
-  else {
+  if (empty($account->mail)) {
     $account = user_load($account->uid);
     $variables['account'] = $account;
-    if (!empty($account->mail)) {
-      $variables['extra'] .= ' <span clsss="user-email">(' . $account->mail . ')</span>';
-    }
+  }
+  if (!empty($account->mail)) {
+    $variables['extra'] .= ' <span clsss="user-email">(' . $account->mail . ')</span>';
   }
 }
 
