@@ -1,4 +1,3 @@
-Updated 20150309 22:03
 
 CONTENTS OF THIS FILE
 ---------------------
