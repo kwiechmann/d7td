@@ -1,0 +1,19 @@
+.node-form-left-side {
+  width: 66%;
+  float: left;
+}
+
+.node-form-right-side {
+  width: 34%;
+  float: right;
+  font-size: 0.8em;
+}
+
+.node-form-right-side .node-form-right-side-inner {
+  margin-left: 20px;
+}
+
+.node-form-right-side input[type=text],
+.node-form-right-side fieldset input[type=text] {
+  width: 90%;
+}
