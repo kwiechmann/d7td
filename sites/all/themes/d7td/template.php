@@ -165,12 +165,18 @@ function d7td_form_alter(&$form, &$form_state, $form_id) {
   if (!empty($form['#node_edit_form'])) {
     unset($form['additional_settings']);
     
-    $form['options']['#collapsed'] = FALSE;
-    $form['path']['#collapsed'] = FALSE;
-    // $form['menu']['#collapsed'] = FALSE;
-    // $form['comment_settings']['#collapsed'] = FALSE;
-    // $form['revision_information']['#collapsed'] = FALSE;
-    $form['author']['#collapsed'] = FALSE;
+    $form['options']['#collapsible'] = FALSE;
+    $form['author']['#collapsible'] = FALSE;
+    
+    // Collapsed is the default for items when pulleed out of the vertical
+    // tabs region.
+    $form['revision_information']['#collapsed'] = TRUE;
+    $form['path']['#collapsed'] = TRUE;
+    $form['menu']['#collapsed'] = TRUE;
+    
+    // Prevent users from adjusting the comment settings. Must be done as part
+    // of hook_form_alter.
+    $form['comment_settings']['#access'] = FALSE;
     
     // kpr($form_id);
     // kpr($form);
