@@ -61,3 +61,46 @@ body.front #content .links {
 .marker.marker-updated {
   color: orange;
 }
+
+.custom-body-summary {
+  border: 1px solid #cccccc;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h2.summary-title {
+  margin-bottom: 5px;
+}
+
+.custom-body-summary p {
+  margin-top: 0;
+  margin-bottom; 0;
+}
+
+table tr td,
+table tr th {
+  padding: 4px 10px;
+}
+
+.view-users-list table tr td,
+.view-users-list table tr th {
+  font-size: 10px;
+}
+
+.view-users-list tr.user-active {
+  background-color: #ccffcc;
+}
+
+.view-users-list tr.user-blocked {
+  background-color: #ffcccc;
+
+}
+
+.view-users-list span.user-active {
+  color: green;
+}
+
+.view-users-list span.user-blocked {
+  color: red;
+}

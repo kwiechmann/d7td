@@ -177,10 +177,7 @@ function d7td_form_alter(&$form, &$form_state, $form_id) {
     // Prevent users from adjusting the comment settings. Must be done as part
     // of hook_form_alter.
     $form['comment_settings']['#access'] = FALSE;
-    
-    // kpr($form_id);
-    // kpr($form);
-    // kpr($form_state);
+
   }
 }
 
@@ -293,11 +290,7 @@ function d7td_form_alter(&$form, &$form_state, $form_id) {
  * @see hook_theme_registry_alter()
  */
 function d7td_theme($existing, $type, $theme, $path) {
-  kpr($existing);
-  kpr($type);
-  kpr($theme);
-  kpr($path);
-  
+
   return array(
     'node_form' => array(
       'render element' => 'form',
