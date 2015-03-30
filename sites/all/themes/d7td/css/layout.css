@@ -240,6 +240,14 @@ div.messages {
   box-shadow: 0 1px 3px #bbbbbb;
 }
 
+.node-article > .group-left .boxed ul {
+  padding-left: 0;
+}
+
+.node-article > .group-left .boxed ul li {
+  list-style-type: none;
+}
+
 .node-article > .group-right {
   width: 670px;
 }
