@@ -169,12 +169,24 @@ div.messages {
   margin-bottom: 20px;
 }
 
-#content .comment .user-picture img {
+#content .comment .user-picture img,
+#comments .field-name-ds-user-picture img {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
   background-position: 50%;
   border-radius: 50%;
+}
+
+#comments .group-left {
+  width: 200px;
+  margin-right: 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+#comments .group-right {
+  width: 450px;
 }
 
 #super-header div.section,
@@ -208,3 +220,27 @@ div.messages {
 #postscript #block-node-recent table {
   width: 100%;
 }
+
+
+/* Display Suite additions: d7td-4-1-1 */
+.node-article > .group-left {
+  width: 230px;
+  font-size: 0.8em;
+  margin-right: 15px;
+  word-wrap: break-word;
+}
+
+.node-article > .group-left .field {
+  margin-top: 15px;
+}
+
+.node-article > .group-left .boxed {
+  border: 1px solid #aaaaaa;
+  padding: 8px;
+  box-shadow: 0 1px 3px #bbbbbb;
+}
+
+.node-article > .group-right {
+  width: 670px;
+}
+
