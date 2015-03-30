@@ -116,6 +116,7 @@ function d7td_process_username(&$variables) {
  *
  * @see node.tpl.php
  */
+/*
 function d7td_preprocess_node(&$variables) {
   $node = $variables['node'];
 
@@ -124,6 +125,7 @@ function d7td_preprocess_node(&$variables) {
     $variables['submitted'] = str_replace(t('Submitted by '), t('Posted by '), $variables['submitted']);
   }
 }
+*/
 
 /**
  * Perform alterations before a form is rendered.
@@ -289,6 +291,7 @@ function d7td_form_alter(&$form, &$form_state, $form_id) {
  *
  * @see hook_theme_registry_alter()
  */
+/*
 function d7td_theme($existing, $type, $theme, $path) {
 
   return array(
@@ -299,7 +302,9 @@ function d7td_theme($existing, $type, $theme, $path) {
     ),
   );
 }
+*/
 
+/*
 function d7td_preprocess_node_form(&$variables) {
   // On a real website and since the amount of CSS is relatively small, this 
   // CSS would be included in the mae CSS for the theme.
@@ -324,3 +329,4 @@ function d7td_preprocess_node_form(&$variables) {
       
   $variables['left_side'] = drupal_render_children($variables['form']);
 }
+*/
