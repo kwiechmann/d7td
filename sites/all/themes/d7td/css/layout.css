@@ -169,6 +169,7 @@ div.messages {
   margin-bottom: 20px;
 }
 
+#content .field-name-ds-user-picture img,
 #content .comment .user-picture img,
 #comments .field-name-ds-user-picture img {
   width: 35px;
@@ -177,6 +178,12 @@ div.messages {
   background-position: 50%;
   border-radius: 50%;
 }
+
+.view-activity-feed .group-right .field-name-title .field-items .field-item div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
 #comments .group-left {
   width: 200px;
@@ -225,12 +232,11 @@ div.messages {
 /* Display Suite additions: d7td-4-1-1 */
 .node > .group-left {
   width: 230px;
-  font-size: 0.8em;
   margin-right: 15px;
-  word-wrap: break-word;
 }
 
-.node-article > .group-left .field {
+.node-page > .group-left .field,
+.node-article > .group-left .field{
   margin-top: 15px;
 }
 
@@ -254,8 +260,7 @@ div.messages {
 
 .node.view-activity-feed .views-row {
   padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #cccccc;
+  margin-bottom: 10px;  border-bottom: 1px solid #cccccc;
 }
 
 .node.view-node-activity .group-left {
@@ -265,5 +270,3 @@ div.messages {
 .node.view-mode-activity .group-right {
   width: 650px;
 }
-
-

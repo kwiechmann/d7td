@@ -116,7 +116,7 @@ function d7td_process_username(&$variables) {
  *
  * @see node.tpl.php
  */
-/*
+
 function d7td_preprocess_node(&$variables) {
   $node = $variables['node'];
 
@@ -124,8 +124,14 @@ function d7td_preprocess_node(&$variables) {
   if (variable_get('node_submitted_' . $node->type, TRUE)) {
     $variables['submitted'] = str_replace(t('Submitted by '), t('Posted by '), $variables['submitted']);
   }
+  
+  if (!empty($variables['preprocess_fields']) && in_array('comment_info', $variables['preprocess_fields'])) {
+    $comment_user = user_load($variables['last_comment_uid']);
+    $comment_username = theme('username', array('account' => $comment_user));
+    $variables['comment_info'] = t('<label>Comment Count:</label>@count<br /><label>Last Comment By:</label> !commenter', array('@count' => $variables['comment_count'], '!commenter' => $comment_username));
+  }
+  
 }
-*/
 
 /**
  * Perform alterations before a form is rendered.
@@ -330,3 +336,4 @@ function d7td_preprocess_node_form(&$variables) {
   $variables['left_side'] = drupal_render_children($variables['form']);
 }
 */
+
