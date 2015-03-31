@@ -104,3 +104,9 @@ table tr th {
 .view-users-list span.user-blocked {
   color: red;
 }
+
+.view-activity-feed .views-row {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}

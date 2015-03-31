@@ -223,7 +223,7 @@ div.messages {
 
 
 /* Display Suite additions: d7td-4-1-1 */
-.node-article > .group-left {
+.node > .group-left {
   width: 230px;
   font-size: 0.8em;
   margin-right: 15px;
@@ -251,4 +251,19 @@ div.messages {
 .node-article > .group-right {
   width: 670px;
 }
+
+.node.view-activity-feed .views-row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.node.view-node-activity .group-left {
+  width: 200px;
+}
+
+.node.view-mode-activity .group-right {
+  width: 650px;
+}
+
 
