@@ -105,8 +105,15 @@ table tr th {
   color: red;
 }
 
-.view-activity-feed .views-row {
-  padding: 10px;
-  margin-bottom: 10px;
+/* Display Suite additions: d7td-4-1-1 */
+.node.view-activity-feed .views-row {
   border-bottom: 1px solid #cccccc;
 }
+
+.node > .group-left {
+  font-size: 0.6em;
+  word-wrap: break-word;
+  color: #888888;
+}
+
+
