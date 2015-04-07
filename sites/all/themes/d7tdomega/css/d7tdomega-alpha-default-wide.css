@@ -1,0 +1,10 @@
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+.site-name-slogan h1.site-name,
+.site-name-slogan h2.site-name {
+  font-size: 36px;
+  padding-top: 0;
+}
+.logo-img {
+  margin-right: 20px;
+}

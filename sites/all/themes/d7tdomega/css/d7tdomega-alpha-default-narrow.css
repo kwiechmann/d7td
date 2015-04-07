@@ -2,3 +2,16 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal 
  *  and widescreen CSS files as appropriate. */
+
+.site-name-slogan h2.site-name,
+.site-name-slogan h1.site-name {
+  font-size: 18px;
+  padding-top: 18px;
+}
+.logo-img {
+  margin-right: 10px;
+}
+#main-menu,
+#secondary-menu {
+  font-size: 14px;
+}

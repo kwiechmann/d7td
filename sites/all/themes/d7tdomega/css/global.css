@@ -1,0 +1,64 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+
+/* Truly global styles */
+html {
+  background: #372f2b;
+}
+body {
+  background: #fff;
+  color: #372f2b;
+}
+#section-header {
+  border-bottom: 3px solid #6a5f5e;
+  background: #372f2b;
+  color: #fff;
+}
+#section-header a,
+#section-header a.active,
+#section-header a.active-trail {
+  color: #fff;
+  text-decoration: none;
+}
+.site-name-slogan h1.site-name,
+.site-name-slogan h2.site-name {
+  font-family: verdana,​helvetica,​arial,​sans-serif;
+}
+#section-footer {
+  background: #372f2b;
+  color: #fff;
+  padding: 15px 0;
+}
+#region-sidebar-second .region-inner,
+#region-sidebar-first .region-inner {
+  border: 3px solid #9a8f8e;
+  background: #cabfbe;
+  padding: 15px;
+}
+
+
+/* Mobile-specific styles */
+div.branding-data {
+  text-align: center;
+}
+.logo-img,
+.site-name-slogan {
+  float: none;
+  margin-right: 0;
+}
+.site-name-slogan h1.site-name,
+.site-name-slogan h2.site-name {
+  font-size: 28px;
+  margin-top: 0;
+}
+#region-menu .navigation {
+  text-align: center;
+}
+#main-menu,
+#secondary-menu {
+  display: block;
+  font-size: 110%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
