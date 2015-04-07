@@ -1,0 +1,41 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+#region-branding,
+#region-menu {
+  height: 80px;
+}
+#region-menu .region-inner .navigation {
+  text-align: right;
+}
+#main-menu,
+#secondary-menu {
+  display: inline-block;
+  font-size: 130%;
+  margin-top: 50px;
+}
+#region-branding .branding-data {
+  margin-top: 18px;
+}
+#logo {
+  max-height: 60px;
+}
+
+
+
+/* Undoing mobile styles */
+div.branding-data {
+  text-align: left;
+}
+.logo-img,
+.site-name-slogan {
+  float: left;
+}
+.logo-img {
+  margin-right: 10px;
+}
+.site-name-slogan h2.site-name,
+.site-name-slogan h1.site-name {
+  font-size: 24px;
+  padding-top: 12px;
+  margin-top: 18px;
+}
