@@ -5,11 +5,5 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-# Ignore emacs temp files
+nbproject/*
 *~
-
-.gitignore
-
-
-nbproject/private/
-nbproject/
